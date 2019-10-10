@@ -40,7 +40,7 @@ with open(os.path.join(model_path,'tokenizer.pickle'), 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 def get_class_label(prediction):
-  for key, value in label_index.iteritems():
+  for key, value in label_index.items():
     if value == prediction[0]:
       return key
 
